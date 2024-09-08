@@ -1,0 +1,127 @@
+# **Aishwarya's Design Portfolio**
+
+This is a React-based personal portfolio website for showcasing creative design work. The website features several sections including an introduction, about me, projects, and a footer. Each section is built using React components and styled with Tailwind CSS for a modern and responsive design.
+
+## **Table of Contents**
+
+1. [Getting Started](https://www.notion.so/A3-README-664705f9e3e1490fa2a28e7f7fd53af2?pvs=21)
+2. [Installation](https://www.notion.so/A3-README-664705f9e3e1490fa2a28e7f7fd53af2?pvs=21)
+3. [Running the Project](https://www.notion.so/A3-README-664705f9e3e1490fa2a28e7f7fd53af2?pvs=21)
+4. [Component Structure](https://www.notion.so/A3-README-664705f9e3e1490fa2a28e7f7fd53af2?pvs=21)
+5. [Best Practices](https://www.notion.so/A3-README-664705f9e3e1490fa2a28e7f7fd53af2?pvs=21)
+6. [Technologies Used](https://www.notion.so/A3-README-664705f9e3e1490fa2a28e7f7fd53af2?pvs=21)
+
+---
+
+## **Getting Started**
+
+- **Node.js** (version 14.x or higher) - [Install Node.js](https://nodejs.org/)
+- **npm** (Node Package Manager) or **yarn** - Comes bundled with Node.js
+
+---
+
+## **Installation**
+
+1. **Clone the Repository**
+    
+    ```bash
+    git clone <https://github.com/yourusername/portfolio.git>
+    cd portfolio
+    
+    ```
+    
+2. **Install Dependencies**
+You can install the dependencies using `npm`:
+    
+    With **npm**:
+    
+    ```bash
+    npm install
+    
+    ```
+    
+
+---
+
+## **Running the Project**
+
+Once the dependencies are installed, you can start the development server:
+
+1. **Start the Development Server**
+    
+    ```bash
+    npm start
+    
+    ```
+    
+2. **Open the Project in Browser**
+The project will automatically open in your default browser at `http://localhost:3000/`. If not, you can manually navigate to that URL.
+
+---
+
+## **Component Structure**
+
+### **Component Overview:**
+
+1. **App.js**:
+    
+    This is the main entry point of the application. It includes all the components that build the web pages, such as the `Header`, `HeroSection`, `AboutMeSection`, `ProjectsSection`, and `Footer`.
+    
+2. **Header.js**:
+    
+    Contains the navigation buttons like "About Me", "Resume", and "Contact". It is designed using Tailwind.
+    
+3. **HeroSection.js**:
+    
+    This is the main hero section that introduces the designer with a welcome message and a short description.
+    
+4. **AboutMeSection.js**:
+    
+    A section that provides more detailed information about the designer, including hobbies and skills, and contains an image. It uses Tailwind CSS for layout and styling.
+    
+5. **ProjectsSection.js**:
+    
+    Displays a list of projects. Each project is represented by a `ProjectCard` component that contains the project's title, description, and image. Users can also add new projects through a form.
+    
+6. **ProjectCard.js**:
+    
+    This component takes in the project's data (title, description, and image) and renders it in a card format. It also has a button to view each project.
+    
+7. **Footer.js**:
+    
+    The footer contains some social links and a copyright notice. It also uses SVG icons for mail and LinkedIn.
+    
+
+---
+
+## **Best Practices**
+
+### **1. Component Reusability:**
+
+Each component is self-contained and modular, following the principle of separation of concerns. For example, `ProjectCard.js` is a reusable component that can be used anywhere in the project to display project-related information.
+
+### **2. State Management:**
+
+- In the `ProjectsSection.js`, state management is handled using React's `useState` hook to manage the list of projects and form inputs for adding new projects.
+
+### **3. Tailwind CSS for Styling:**
+
+- Tailwind CSS is used to style components. Tailwind’s utility-first approach helps keep the components clean and easy to maintain without writing a lot of custom CSS.
+
+### **4. Responsive Design:**
+
+- Tailwind CSS classes such as `flex`, `grid`, and `gap` help in building a responsive design that works well across different screen sizes.
+
+### **5. Clean Code:**
+
+- The project maintains clean and readable code, following JavaScript best practices like destructuring props and using meaningful variable names.
+
+---
+
+## **Technologies Used**
+
+- **React.js**
+- **Tailwind CSS**
+- **JavaScript (ES6)**:
+- **Node.js and npm**: For managing dependencies and running the project.
+- **HTML5/CSS3**: For structuring and designing the content.
