@@ -1,0 +1,57 @@
+//-------------Hero Section ------------//
+
+/* Animation Keyframes */
+@keyframes text-clip {
+    from {
+      clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+    }
+    to {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+}
+
+@keyframes outer-right {
+    from {
+      transform: translateX(110%); /* Start from the right with margin */
+    }
+    to {
+      transform: none; /* Move into place */
+    }
+}
+
+@keyframes inner-right {
+    from {
+      transform: translateX(110%); /* Start from the right with margin */
+    }
+    to {
+      transform: none; /* Move into place */
+    }
+}
+
+/* Apply animations to h1 and p */
+
+/* h1 */
+.title-inner {
+    display: inline-block;
+    margin-right: 10px; /* Add margin to the right */
+    animation: inner-right 2s ease forwards, text-clip 2s 2s cubic-bezier(0.5, 0, 0.1, 1) forwards; /* Delay the text clip animation */
+}
+
+/* p */
+.mozart-inner {
+    display: inline-block;
+    margin-right: 10px; /* Add margin to the right */
+    animation: outer-right 2s ease forwards, text-clip 2s 2s cubic-bezier(0.5, 0, 0.1, 1) forwards; /* Delay the text clip animation */
+}
+
+/* ABOUT ME */
+
+/* Set up the default style */
+.about-me-section {
+  transform: scale(0.5); /* Start smaller */
+  opacity: 0.5;
+  transition: opacity 0.2s ease-out, transform 0.2s ease-out;
+}
+
+
+
