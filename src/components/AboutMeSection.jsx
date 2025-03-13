@@ -44,21 +44,21 @@ const AboutMeSection = () => {
     return (
         <section
             ref={sectionRef}
-            className="about-me-section items-center mb-20 mt-[-10px] bg-stone-900 p-10 rounded-3xl"
+            className="about-me-section items-center mb-20 mt-[-10px] bg-stone-900 p-4 sm:p-6 md:p-8 lg:p-10 rounded-3xl"
             style={{
-                transform: `scale(${scale})`, // Dynamically adjust the scale
-                opacity: opacity, // Dynamically adjust the opacity
+                transform: `scale(${scale})`,
+                opacity: opacity,
             }}
         >
-            <div className="flex grid grid-cols-2 gap-10">
-                <p className="text-2xl font-semibold">
+            <div className="flex flex-col-reverse md:grid md:grid-cols-2 gap-6 md:gap-10">
+                <p className="text-lg sm:text-xl md:text-2xl font-semibold">
                     As a multifaceted designer, I thrive on blending creativity with technical acumen to craft engaging digital experiences. 
                     I am driven by the challenge of crafting seamless web experiences, breathing new life into digital platforms through thoughtful redesigns. 
                     Actively honing my skills in UX research and web design, I am committed to bringing my innovative ideas to fruition.
                     <br /><br />
                     My passion for design is matched only by my love for music and sports, adding depth and diversity to my perspective.
                 </p>
-                <img className="rounded-3xl" src="aishla.jpg" alt="Portfolio" />
+                <img className="rounded-3xl w-full h-auto mb-6 md:mb-0" src="aishla.jpg" alt="Portfolio" />
             </div>
         </section>
     );

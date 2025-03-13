@@ -7,8 +7,8 @@ import ProjectsSection from "./components/ProjectsSection";
 
 const App = () => {
     return (
-        <div className="bg-gradient-to-b from-stone-900 to-stone-800 text-white ">
-          <div className="px-20">
+        <div className="bg-gradient-to-b from-stone-900 to-stone-800 text-white">
+          <div className="px-4 sm:px-8 md:px-12 lg:px-20">
           <Header />
           <HeroSection/>
           <AboutMeSection />
